@@ -6,6 +6,12 @@ def main():
         n = recursivePower(3.3, i)
         print("n", n)
 
+'''
+power <= 1
+repeat exp times:
+    power <= power * base
+return power
+'''
 def iterativePower(base, exp):
     '''
     base: int or float
@@ -18,6 +24,13 @@ def iterativePower(base, exp):
         power *= base
     return power
 
+'''
+recursive(base, exp):
+    if exp = 0
+        return 1
+    else
+        return base * recursive(base, exp-1)
+'''
 def recursivePower(base, exp):
     '''
     base: int or float
